@@ -1,0 +1,17 @@
+syntax = "proto2";
+option java_package = "com.centling.protobuf";
+package bean;
+message Entity {
+    optional string attrcd = 1;
+    optional string cd = 2;
+    optional string speccn = 3;
+    optional string specen = 4;
+    optional string statecd = 5;
+    optional string statenm = 6;
+    optional string countrycd = 7;
+    optional string countrynm = 8;
+}
+
+message basecodelist {
+    repeated Entity entity = 1;
+}
